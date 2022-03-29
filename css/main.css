@@ -173,6 +173,14 @@ header .content-wrapper {
     margin: 0;
 }
 
+header figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+
 .header-divider {
   background: #3a3a3a;
   width: 100%;
@@ -199,6 +207,14 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+}
+
+img {
+	width: 100%;
+}
+
+figure {
+        margin: 0;
 }
 
 footer {
@@ -239,6 +255,9 @@ footer .copyright {
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 .hero-area {
+    background: url('../img/hero.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -286,6 +305,8 @@ input[type=button] {
 }
 
 .features {
+    background: url('../img/features.jpg') center no-repeat #333;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -481,6 +502,15 @@ input[type=button] {
         margin: 100px 0;
     }
 
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
     header {
         justify-content: space-around;
           padding: 33px 0;
@@ -489,6 +519,10 @@ input[type=button] {
     header .content-wrapper {
         width: 100%;
         justify-content: space-between;
+    }
+
+    header figure {
+        width: 30%;
     }
 
     header nav {
@@ -501,6 +535,16 @@ input[type=button] {
 
     .header-divider {
       display: none;
+    }
+
+    .hero-area {
+      min-height: 600px;
+    }
+
+    .hero-area h1 {
+        font-size: 3em;
+        line-height: 1;
+        margin: 0;
     }
 
     aside .content-wrapper {
@@ -516,6 +560,10 @@ input[type=button] {
         margin: 0;
     }
 
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
     .features article {
         display: flex;
         justify-content: center;
@@ -525,7 +573,7 @@ input[type=button] {
     }
 
     .features .features-item-description {
-        width: 50%;
+        width: 62%;
     }
 
     .reviews article {
@@ -537,15 +585,38 @@ input[type=button] {
         width: 49%;
     }
 
+    .reviews article figure {
+        width: 49%;
+    }
+
+    .reviews h2 {
+        width: 85%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+    }
+
     footer .content-wrapper {
         width: 65%;
         margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
+    }
+
+    footer h4 {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        line-height: 1.285;
     }
 
     footer .contact {
@@ -601,7 +672,26 @@ input[type=button] {
         max-width: 960px;
     }
 
+    header {
+      padding: 15px 0;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+
+    h2 {
+      font-size: 2.25em;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
+
     .hero-area h1 {
+        font-size: 3.75em;
         width: 70%;
     }
 
@@ -624,6 +714,14 @@ input[type=button] {
 
     .reviews article div {
       width: 42%;
+    }
+
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+    
+    footer h4 {
+      font-size: 1.875em;
     }
 
     /* -------------------- Desktop Styles - About Page -------------------- */
